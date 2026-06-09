@@ -12,7 +12,7 @@ terraform {
 
 
   backend "s3" {
-    bucket = "mybucket-1001"
+    bucket = "kalyan-mybucket-1001"
     key    = "June2026-practice/2026/June-Practice/terraform.tfstate"
     region = "us-east-1"
     #for state locking
@@ -156,7 +156,7 @@ data "aws_ami" "ubuntu" {
 # Block-8: Modules Block - Using Public Module
 module "ec2_instance" {
   source  = "terraform-aws-modules/ec2-instance/aws"
-  version = "~> 5.0"
+  version = "~> 6.0"
 
   name = "module-1001"
 
