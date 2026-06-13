@@ -1,0 +1,6 @@
+.tfstate
+.terraform
+.lock.hcl
+.pem
+# command to add files to repository (safest way to avoid adding sensitive files)
+# command --> git add *.tf README.md .gitignore   
